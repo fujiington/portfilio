@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prices - Portfolio</title>
+    <link rel="stylesheet" href="/index/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="myscript.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Prices</h1>
+            <nav>
+                <div class="profile-section">
+                    <button id="loginBtn" class="login-btn">Login</button>
+                    <div class="profile-container" style="display: none;">
+                        <img id="headerProfilePic" class="profile-pic" alt="Profile Picture" style="display: none;">
+                        <button id="profileBtn" class="profile-btn">My Profile</button>
+                        <button id="logoutBtn" class="logout-btn">Logout</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2>My Services & Prices</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Basic Website</h3>
+                <p class="price">€150</p>
+                <ul>
+                    <li>5 Pages</li>
+                    <li>Responsive Design</li>
+                    <li>Basic SEO</li>
+                    <li>Contact Form</li>
+                    <li>Basic Features</li>
+                </ul>
+                <div class="button-group">
+                    <a href="mailto:Lukas.Nordhaug@gmail.com" class="btn">Contact Me</a>
+                </div>
+                <div class="button-group">
+                    <button id="basic-plan-btn" class="btn btn-primary">Buy Here</button>
+                </div>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Standard Website</h3>
+                <p class="price">€350</p>
+                <ul>
+                    <li>10 Pages</li>
+                    <li>Responsive Design</li>
+                    <li>Advanced SEO</li>
+                    <li>Contact Form</li>
+                    <li>Custom Features</li>
+                </ul>
+                <div class="button-group">
+                    <a href="mailto:Lukas.Nordhaug@gmail.com" class="btn">Contact Me</a>
+                </div>
+                <div class="button-group">
+                    <button id="standard-plan-btn" class="btn btn-primary">Buy Here</button>
+                </div>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Premium Website</h3>
+                <p class="price">€750</p>
+                <ul>
+                    <li>Unlimited Pages</li>
+                    <li>Responsive Design</li>
+                    <li>Premium SEO</li>
+                    <li>Custom Features</li>
+                    <li>Priority Support</li>
+                </ul>
+                <div class="button-group">
+                    <a href="mailto:Lukas.Nordhaug@gmail.com" class="btn">Contact Me</a>
+                </div>
+                <div class="button-group">
+                    <button id="premium-plan-btn" class="btn btn-primary">Buy Here</button>
+                </div>
+            </div>
+        </div>
+        <div class="back-button">
+            <a href="http://luno5.web.techcollege.dk/" class="btn">Back to Portfolio</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container social-links">
+            <a href="https://x.com/RealFujii" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Twitter5_svg-512.png" alt="Twitter"></a>
+            <a href="https://www.facebook.com/lukas.nordhaug.7" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Facebook_svg-512.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/lukasnordhaug/" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Instagram_svg-512.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@RealFujii" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Youtube3_svg-512.png" alt="YouTube"></a>
+        </div>
+    </footer>
+</body>
+</html> 

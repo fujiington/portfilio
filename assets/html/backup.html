@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/index/backup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="myscript.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <h1 id="welcomeHeader">Welcome to my Portfolio</h1>
+        <nav>
+            <div class="profile-section">
+                <button id="loginBtn" class="login-btn">Login</button>
+                <div class="profile-container" style="display: none;">
+                    <img id="headerProfilePic" class="profile-pic" alt="Profile Picture" style="display: none;">
+                    <button id="profileBtn" class="profile-btn">My Profile</button>
+                    <button id="logoutBtn" class="logout-btn">Logout</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<section id="hero">
+    <div class="container">
+        <h1 class="hero-title">Hi, I'm Lukas Nordhaug</h1>
+        <h2 class="hero-subtitle">Web Developer/Designer And Graphic Designer</h2>
+        <p class="hero-description">
+            A passionate web design student with 3 years of freelance graphic design experience, creating beautiful and functional websites and artwork. 
+            Also ranked among the top players in competitive gaming.
+        </p>
+        <div class="btn-container">
+            <a href="#gallery" class="btn">View My Gallery</a>
+            <a href="#websites" class="btn">View My Finished Websites</a>
+            <a href="#projects" class="btn">View My Projects</a>
+            <a href="#achievements" class="btn">View My Achievements</a>
+        </div>
+    </div>
+</section>
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="auth-tabs">
+            <button class="tab-btn active" data-tab="login">Login</button>
+            <button class="tab-btn" data-tab="signup">Sign Up</button>
+        </div>
+        
+        <form id="loginForm" class="auth-form active">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" class="btn">Login</button>
+            <p id="loginMessage"></p>
+        </form>
+
+        <form id="signupForm" class="auth-form">
+            <h2>Sign Up</h2>
+            <input type="text" id="newUsername" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="newPassword" placeholder="Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            <button type="submit" class="btn">Sign Up</button>
+            <p id="signupMessage"></p>
+        </form>
+    </div>
+</div>
+<section id="gallery" class="container">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="/images/eldenring.png" alt="Elden Ring Impression">
+            <p>An impression of Satoru Gojo as an Elden Ring boss</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/images/sukuna.png" alt="Sukuna">
+            <p>Sukuna fighting Mahoraga</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/images/gojo.png" alt="Gojo">
+            <p>Satoru Gojo</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/images/sponge.png" alt="Spongebob and Patrick">
+            <p>Spongebob and Patrick in a war setting</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/images/asta.png" alt="Asta">
+            <p>Asta</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/images/dog.png" alt="Dog">
+            <p>Ominous dog</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/images/placeholder.png" alt="Coming Soon">
+            <p>Coming Soon</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/images/placeholder.png" alt="Coming Soon">
+            <p>Coming Soon</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/images/placeholder.png" alt="Coming Soon">
+            <p>Coming Soon</p>
+        </div>
+    </div>
+</section>
+<section id="websites" class="container">
+    <h2>Websites</h2>
+    <div class="websites-grid">
+        <div class="website">
+            <h3>ElaProof</h3>
+            <p>My family companies website</p>
+            <a href="https://elaproof.dk/Danmark/" target="_blank" class="btn">Visit Website</a>
+            </div>
+            <div class="website">
+                <h3>Project X</h3>
+                <p>Coming soon...</p>
+                <a href="#" target="_blank" class="btn">Visit Website</a>
+            </div>
+            <div class="website">
+                <h3>Project X</h3>
+                <p>Coming soon...</p>
+                <a href="#" target="_blank" class="btn">Visit Website</a>
+            </div>  
+        </div>
+</section>
+<section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="project-grid">
+    <div class="project">
+        <h3>Famous Paintings</h3>
+        <p>My first website showing famous paintings from various artist and shares some knowlegde on their backstories.</p>
+        <a href="http://luno52.web.techcollege.dk/" target="_blank" class="btn">Visit Project</a>
+    </div>
+        <div class="project">
+            <h3>Portfolio</h3>
+            <p>My second website is this website which i want to use to share my work and experience</p>
+            <a href="#" target="_blank" class="btn">Visit Project</a>
+    </div>
+        <div class="project">
+            <h3>project x</h3>
+            <p>coming soon</p>
+    </div>
+    </section>
+    <section id="achievements" class="container">
+        <h2>Achievements</h2>
+        <div class="achievements-grid">
+            <div class="achievement">
+                <h3>Succesful Freelance Designer</h3>
+                <p>Was a succseful freelance designer for 3 years.</p>
+                <span class="date">2021-2024</span>
+            </div>
+            <div class="achievement">
+                <h3>#3 In The World In Valorant</h3>
+                <p>Competed at a professional level and peaked rank #3 in the world, and able to maintain top #50 for the last 2 years.</p>
+                <span class="date">2020-2025</span>
+            </div>
+            <div class="achievement">
+                <h3>#1 In The World In Rainbow Six Siege</h3>
+                <p>Was too young to compete but managed to get #1 in the world on leaderboards.</p>
+                <span class="date">2017-2020</span>
+            </div>
+            <div class="achievement">
+                <h3>Completed Design Course</h3>
+                <p>Completed a design course that helped me become better at designing.</p>
+                <span class="date">2021</span>
+            </div>
+            <div class="achievement">
+                <h3>Graduated High School</h3>
+                <p>Graduated.</p>
+                <span class="date">2022</span>
+            </div>
+            <div class="achievement">
+                <h3>Graduated TechCollege</h3>
+                <p>Graduated.</p>
+                <span class="date">2026</span>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <h2>Contact & Prices</h2>
+        <p>
+            Email: <a href="mailto:Lukas.Nordhaug@gmail.com" style="color: white;">Lukas.Nordhaug@gmail.com</a><br>
+            Phone: +45 50 69 98 93
+        </p>
+        <a href="/index/prices.html" class="btn">View Prices</a>
+    </section>
+    <section id="comments" class="container">
+        <h2>If you have any comments or suggestions.</h2>
+        <form id="commentForm" style="width: 100%;">
+            <textarea id="commentInput" style="width: 100%; min-height: 100px; margin-bottom: 1rem;" placeholder="Leave your comment here..." required></textarea>
+            <button type="submit" class="btn">Submit Comment</button>
+        </form>
+        <div id="commentSection" style="width: 100%;"></div>
+    </section>
+    <footer>
+        <div class="container social-links">
+            <a href="https://x.com/RealFujii" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Twitter5_svg-512.png" alt="Twitter"></a>
+            <a href="https://www.facebook.com/lukas.nordhaug.7" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Facebook_svg-512.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/lukasnordhaug/" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Instagram_svg-512.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@RealFujii" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Youtube3_svg-512.png" alt="YouTube"></a>
+        </div>
+    </footer>
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>My Profile</h2>
+            <div class="profile-section">
+                <div class="profile-image-container">
+                    <img id="profileImage" alt="Profile Picture">
+                    <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                    <button id="changeImageBtn" class="btn">Change Profile Picture</button>
+                </div>
+                <div class="profile-details">
+                    <div class="input-group">
+                        <label for="profileUsername">Username:</label>
+                        <input type="text" id="profileUsername" placeholder="Your username">
+                    </div>
+                    <button id="saveProfileBtn" class="btn">Save Changes</button>
+                    <p id="profileMessage"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select all images in the gallery
+            const images = document.querySelectorAll(".gallery-item img");
+        
+            images.forEach(image => {
+                image.addEventListener("click", function () {
+                    // Create overlay
+                    const overlay = document.createElement("div");
+                    overlay.classList.add("image-overlay");
+            
+                    // Create enlarged image
+                    const enlargedImg = document.createElement("img");
+                    enlargedImg.src = this.src;
+                    enlargedImg.classList.add("enlarged-img");
+            
+                    // Append image to overlay
+                    overlay.appendChild(enlargedImg);
+                    document.body.appendChild(overlay);
+            
+                    // Remove overlay when clicked
+                    overlay.addEventListener("click", function () {
+                        overlay.remove();
+                    });
+            
+                    // Close when Escape key is pressed
+                    document.addEventListener("keydown", function (event) {
+                        if (event.key === "Escape") {
+                            overlay.remove();
+                        }
+                    });
+                });
+            });
+        });
+        </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener("click", function (e) {
+                    const targetID = this.getAttribute("href");
+                    if (targetID && targetID !== "#" && targetID.length > 1) {
+                        const targetElement = document.querySelector(targetID);
+                        if (targetElement) {
+                            e.preventDefault();
+            
+                            // Get the current scroll position
+                            const startPosition = window.pageYOffset;
+                            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                            const distance = targetPosition - startPosition;
+                            const duration = 800; 
+                            let startTime = null;
+            
+                            function animationScroll(currentTime) {
+                                if (!startTime) startTime = currentTime;
+                                const timeElapsed = currentTime - startTime;
+                                const progress = Math.min(timeElapsed / duration, 1);
+            
+                                // Ease-in-out function
+                                const ease = progress < 0.5 
+                                    ? 2 * progress * progress 
+                                    : -1 + (4 - 2 * progress) * progress;
+            
+                                window.scrollTo(0, startPosition + (distance * ease));
+            
+                                if (timeElapsed < duration) {
+                                    requestAnimationFrame(animationScroll);
+                                }
+                            }
+            
+                            requestAnimationFrame(animationScroll);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+          <script>
+            // Function to render a single comment on the page
+    function renderComment(comment) {
+      const commentSection = document.getElementById('commentSection');
+      const commentDiv = document.createElement('div');
+      commentDiv.className = 'comment';
+      commentDiv.setAttribute('data-id', comment.id);
+      
+      // Create header with username and timestamp
+      const commentHeader = document.createElement('div');
+      commentHeader.className = 'comment-header';
+      
+      const usernamePara = document.createElement('span');
+      usernamePara.className = 'commenter-username';
+      usernamePara.textContent = comment.username;
+      
+      const timestamp = document.createElement('span');
+      timestamp.className = 'comment-timestamp';
+      timestamp.textContent = new Date(comment.timestamp).toLocaleString();
+      
+      commentHeader.appendChild(usernamePara);
+      commentHeader.appendChild(timestamp);
+      commentDiv.appendChild(commentHeader);
+      
+      // Create comment text
+      const commentSpan = document.createElement('span');
+      commentSpan.className = 'comment-text';
+      commentSpan.textContent = comment.text;
+      commentDiv.appendChild(commentSpan);
+      
+      // Create delete button (only show for the comment author)
+      if (localStorage.getItem('currentUser') === comment.username) {
+        const deleteButton = document.createElement('button');
+        deleteButton.className = 'delete-btn';
+        deleteButton.textContent = 'Delete';
+        deleteButton.addEventListener('click', function() {
+          commentDiv.remove();
+          deleteComment(comment.id);
+        });
+        commentDiv.appendChild(deleteButton);
+      }
+      
+      commentSection.appendChild(commentDiv);
+    }
+    
+    // Function to load comments from localStorage and render them
+    function loadComments() {
+      const storedComments = JSON.parse(localStorage.getItem('comments')) || [];
+      commentSection.innerHTML = ''; // Clear existing comments
+      
+      // Sort comments by timestamp in descending order (newest first)
+      storedComments.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+      
+      storedComments.forEach(function(comment) {
+        renderComment(comment);
+      });
+    }
+    
+    // Function to delete a comment from localStorage by its ID
+    function deleteComment(id) {
+      let comments = JSON.parse(localStorage.getItem('comments')) || [];
+      comments = comments.filter(function(comment) {
+        return comment.id !== id;
+      });
+      localStorage.setItem('comments', JSON.stringify(comments));
+    }
+    
+    // Listen for form submission to add a new comment
+    document.getElementById('commentForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const currentUser = localStorage.getItem('currentUser');
+      if (!currentUser) {
+        alert('Please log in to leave a comment');
+        return;
+      }
+      
+      const commentInput = document.getElementById('commentInput');
+      const commentText = commentInput.value.trim();
+      
+      if(commentText) {
+        const commentObj = {
+          id: Date.now(),
+          username: currentUser,
+          text: commentText,
+          timestamp: new Date().toISOString()
+        };
+        
+        let comments = JSON.parse(localStorage.getItem('comments')) || [];
+        comments.push(commentObj);
+        localStorage.setItem('comments', JSON.stringify(comments));
+        
+        // Clear the input field
+        commentInput.value = '';
+        
+        // Reload all comments to maintain sort order
+        loadComments();
+      }
+    });
+    
+    // Load comments from localStorage when the page loads
+    loadComments();
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById('loginModal');
+        const btn = document.getElementById('loginBtn');
+        const span = document.getElementsByClassName('close')[0];
+        const loginForm = document.getElementById('loginForm');
+        const signupForm = document.getElementById('signupForm');
+        const loginMessage = document.getElementById('loginMessage');
+        const signupMessage = document.getElementById('signupMessage');
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const authForms = document.querySelectorAll('.auth-form');
+
+        // Tab switching functionality
+        tabBtns.forEach(button => {
+            button.addEventListener('click', () => {
+                tabBtns.forEach(btn => btn.classList.remove('active'));
+                authForms.forEach(form => form.classList.remove('active'));
+                button.classList.add('active');
+                const formToShow = button.getAttribute('data-tab') === 'login' ? loginForm : signupForm;
+                formToShow.classList.add('active');
+            });
+        });
+
+        // Open modal
+        btn.onclick = function() {
+            modal.style.display = 'block';
+        }
+
+        // Close modal
+        span.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        // Close when clicking outside
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Handle signup
+        signupForm.onsubmit = function(e) {
+            e.preventDefault();
+            const username = document.getElementById('newUsername').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('newPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                signupMessage.style.color = 'red';
+                signupMessage.textContent = 'Passwords do not match';
+                return;
+            }
+
+            // Get existing users or initialize empty array
+            let users = JSON.parse(localStorage.getItem('users')) || [];
+
+            // Check if username already exists
+            if (users.some(user => user.username === username)) {
+                signupMessage.style.color = 'red';
+                signupMessage.textContent = 'Username already exists';
+                return;
+            }
+
+            // Add new user
+            users.push({
+                username: username,
+                email: email,
+                password: password // In a real app, this should be hashed
+            });
+
+            localStorage.setItem('users', JSON.stringify(users));
+            signupMessage.style.color = 'green';
+            signupMessage.textContent = 'Sign up successful! Please login.';
+
+            // Clear form
+            signupForm.reset();
+
+            // Switch to login tab after successful signup
+            setTimeout(() => {
+                tabBtns[0].click();
+                signupMessage.textContent = '';
+            }, 2000);
+        };
+
+        // Update login handler
+        loginForm.onsubmit = function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Get users from localStorage
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            const user = users.find(u => u.username === username && u.password === password);
+
+            if (user || (username === 'admin' && password === 'password')) {
+                loginMessage.style.color = 'green';
+                loginMessage.textContent = 'Login successful!';
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('currentUser', username);
+
+                // Load user data including profile picture
+                const userData = JSON.parse(localStorage.getItem('userData') || '{}');
+                if (userData[username] && userData[username].profileImage) {
+                    // Update header profile picture with saved image
+                    const headerProfilePic = document.getElementById('headerProfilePic');
+                    headerProfilePic.src = userData[username].profileImage;
+                }
+
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                    loginForm.reset();
+                    loginMessage.textContent = '';
+                    updateLoginButton();
+                }, 1500);
+            } else {
+                loginMessage.style.color = 'red';
+                loginMessage.textContent = 'Invalid username or password';
+            }
+        };
+
+        function updateLoginButton() {
+            const profileContainer = document.querySelector('.profile-container');
+            const headerProfilePic = document.getElementById('headerProfilePic');
+            const welcomeHeader = document.getElementById('welcomeHeader');
+            
+            if (localStorage.getItem('isLoggedIn') === 'true') {
+                const currentUser = localStorage.getItem('currentUser');
+                btn.style.display = 'none';
+                profileContainer.style.display = 'flex';
+                welcomeHeader.textContent = `Hello ${currentUser}`;
+                
+                // Load user's profile picture if exists
+                const userData = JSON.parse(localStorage.getItem('userData') || '{}');
+                if (userData[currentUser] && userData[currentUser].profileImage) {
+                    headerProfilePic.src = userData[currentUser].profileImage;
+                }
+            } else {
+                btn.style.display = 'inline-block';
+                btn.textContent = 'Login';
+                profileContainer.style.display = 'none';
+                welcomeHeader.textContent = 'Welcome to my Portfolio';
+            }
+        }
+
+        // Check login status on page load
+        updateLoginButton();
+    });
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const profileBtn = document.getElementById('profileBtn');
+        const profileModal = document.getElementById('profileModal');
+        const profileCloseBtn = profileModal.querySelector('.close');
+        const changeImageBtn = document.getElementById('changeImageBtn');
+        const imageUpload = document.getElementById('imageUpload');
+        const profileImage = document.getElementById('profileImage');
+        const profileUsername = document.getElementById('profileUsername');
+        const saveProfileBtn = document.getElementById('saveProfileBtn');
+        const profileMessage = document.getElementById('profileMessage');
+        const headerProfilePic = document.getElementById('headerProfilePic');
+
+        // Load profile data when opening modal
+        profileBtn.onclick = function() {
+            const currentUser = localStorage.getItem('currentUser');
+            const userData = JSON.parse(localStorage.getItem('userData') || '{}');
+            
+            profileUsername.value = currentUser || '';
+            if (userData.profileImage) {
+                profileImage.src = userData.profileImage;
+            }
+            profileModal.style.display = 'block';
+        }
+
+        // Close modal
+        profileCloseBtn.onclick = function() {
+            profileModal.style.display = 'none';
+        }
+
+        // Close when clicking outside
+        window.onclick = function(event) {
+            if (event.target == profileModal) {
+                profileModal.style.display = 'none';
+            }
+        }
+
+        // Handle image upload
+        changeImageBtn.onclick = function() {
+            imageUpload.click();
+        }
+
+        imageUpload.onchange = function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                if (file.size > 5000000) { // 5MB limit
+                    profileMessage.style.color = 'red';
+                    profileMessage.textContent = 'Image size must be less than 5MB';
+                    return;
+                }
+
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    profileImage.src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Update save profile changes
+        saveProfileBtn.onclick = function() {
+            const newUsername = profileUsername.value.trim();
+            const currentUser = localStorage.getItem('currentUser');
+            
+            if (!newUsername) {
+                profileMessage.style.color = 'red';
+                profileMessage.textContent = 'Username cannot be empty';
+                return;
+            }
+
+            // Get existing userData or initialize new object
+            const userData = JSON.parse(localStorage.getItem('userData') || '{}');
+            
+            // Store profile data under username key
+            userData[currentUser] = {
+                username: newUsername,
+                profileImage: profileImage.src
+            };
+
+            // Update localStorage
+            localStorage.setItem('userData', JSON.stringify(userData));
+            localStorage.setItem('currentUser', newUsername);
+            
+            // Update header profile picture
+            headerProfilePic.src = profileImage.src;
+            
+            // Show success message
+            profileMessage.style.color = 'green';
+            profileMessage.textContent = 'Profile updated successfully!';
+            
+            setTimeout(() => {
+                profileMessage.textContent = '';
+                profileModal.style.display = 'none';
+            }, 2000);
+        }
+    });
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const logoutBtn = document.getElementById('logoutBtn');
+        
+        logoutBtn.onclick = function() {
+            // Clear all authentication-related data
+            localStorage.removeItem('isLoggedIn');
+            localStorage.removeItem('currentUser');
+            localStorage.removeItem('userData');
+            
+            // Update UI elements
+            const loginBtn = document.getElementById('loginBtn');
+            const profileContainer = document.querySelector('.profile-container');
+            
+            loginBtn.style.display = 'inline-block';
+            profileContainer.style.display = 'none';
+            
+            // Redirect to home page
+            window.location.href = '#';
+            window.location.reload();
+        }
+    });
+    </script>
+</body>
+</html>
